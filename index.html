@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Happy Birthday, Sudeep</title>
+<meta name="theme-color" content="#1a1240"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&family=Dancing+Script:wght@600;700&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<canvas id="skyCanvas"></canvas>
+<div class="moon"></div>
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <img src="img/banner.png" alt="Happy Birthday banner" class="banner reveal reveal-flip"/>
+    <div class="user-frame reveal tilt"><img src="img/user.png" alt="Sudeep"/></div>
+    <div class="typewrap reveal" aria-live="polite"><span id="typewriter"></span><span class="cursor" aria-hidden="true"></span></div>
+  </section>
+
+  <section>
+    <div class="wish-card reveal tilt">
+      <div class="sparkles" id="sparkles"></div>
+      <div class="badge">🌙</div>
+      <h1>Hey, Sudeep</h1>
+      <p>
+        hi, it's <strong>murali</strong> — sneaking back into your birthday two years later. 🌸<br><br>
+        picture a quiet sky, a paper moon, and sakura drifting past just for you.
+        that's this little page, built again with a bit more magic this time.<br><br>
+        so make a wish, scroll slow, and enjoy every bit of your <span class="glow">happy birthday ✨</span><br><br>
+        wishing you soft mornings, loud laughter, and a year that feels like a good dream. 🌺
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="cake-wrap reveal"><div class="flame"></div><img src="img/cake.svg" alt="Birthday cake" class="cake-img"/></div>
+  </section>
+
+  <section>
+    <div class="section-title reveal">Starlit Memories</div>
+    <div class="gallery-stage reveal reveal-left tilt">
+      <div id="cube" class="cube">
+        <div class="face face1" style="background-image:url('img/1.jpg')"></div>
+        <div class="face face2" style="background-image:url('img/2.jpg')"></div>
+        <div class="face face3" style="background-image:url('img/3.jpg')"></div>
+        <div class="face face4" style="background-image:url('img/4.jpg')"></div>
+      </div>
+    </div>
+    <div class="gallery-ui reveal">
+      <button id="prevImg" aria-label="Previous photo">◀</button>
+      <button id="nextImg" aria-label="Next photo">▶</button>
+    </div>
+    <div class="hint reveal">swipe, drag, or use the arrow keys ✨</div>
+  </section>
+
+  <section>
+    <div class="section-title reveal">One Last Wish</div>
+    <div class="card-container reveal reveal-right" id="cardContainer">
+      <div class="card" id="card">
+        <div class="card-side front">
+          <h1>Happy Birthday</h1>
+          <h3>tap to open your card</h3>
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="34" fill="#ffd9ec"/>
+            <path d="M60 26a34 34 0 1 0 34 34 27 27 0 0 1-34-34z" fill="#fff6fb"/>
+            <circle cx="30" cy="24" r="2.4" fill="#ffd166"/>
+            <circle cx="96" cy="40" r="1.8" fill="#ffd166"/>
+            <circle cx="14" cy="70" r="1.6" fill="#ffd166"/>
+            <circle cx="100" cy="86" r="2" fill="#ffd166"/>
+          </svg>
+          <button class="open-button" id="toggleButton">Open Card</button>
+        </div>
+        <div class="card-side back">
+          <h2>Happy Birthday</h2>
+          <p>
+            another year, another chapter — and somehow you keep making it look easy.
+            may this one bring soft mornings, warm people, and a few surprises worth remembering.
+            from one dreamer to another: happy birthday, sudeep. 🌙✨
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer reveal">
+    <div class="msg">thanks for visiting, sudeep 🌙</div>
+    <div class="by">crafted with stardust by murali</div>
+  </div>
+
+</div>
+
+<script src="js/sky.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
